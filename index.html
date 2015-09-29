@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <style>
-        *{padding: 0; margin: 0; font-family: arial, sans-serif;}
+        *{padding: 0; margin: 0; font-family: Arial, sans-serif;}
         *, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
-        nav {float:left; display: block; background: blue; height: 50px; width: 100%; color:white;}
-        #logo {position: absolute; left: 30px; top:15px; }
+        .underline {display: block; height: 1px; background-color: #E9E9E9; width:100%; margin-top: 15px;}
+      
         
-        /* Nav link styles */
+        /* Top Nav styles */
+        nav#top {float:left; display: block; background: #3299BB; height: 50px; width: 100%; color:white;}
+        #logo {position: absolute; left: 30px; top:15px; }
         #nav-links {float:left;}
         #nav-links a {color:white; text-decoration: none; cursor: pointer;}
         #nav-links ul {position: absolute; right:0px; list-style: none;}
-        #nav-links ul li {float:left; height: 50px; padding: 15px 20px 0 20px; border-right: 1px solid gray; display: block;}
-        #nav-links ul li:hover {background-color:#999;}
+        #nav-links ul li {float:left; height: 50px; padding: 15px 30px 0 30px; border-right: 1px solid #E9E9E9; display: block;}
+        #nav-links ul li:hover {background-color:#BCBCBC;}
+        /* End top nav styles       */
+        
+/* Secondary Nav styles       */
+        nav#secondary {display:block; float:left; width: 100%; margin-top:15px; height: 50px;}
+        nav#secondary ul {position: absolute; left:30px; width: 90%;}
+        nav#secondary ul li {display: inline; margin-right: 15px;}
+        nav#secondary a {color:#FF9900; text-decoration: none; font-weight: 100; letter-spacing: .5px;}
+        nav#secondary a:hover {color:#3299BB; text-decoration: none;}
+/*        end secondary styles*/
+        
+/*        start module styles*/
+        section#search-module-container {float: left; display: block; height: 500px; background-color: #FF9900;}
+        
     </style>
 </head>
 <body>
-    <nav>
+    <nav id="top">
         <section id="logo">Bookers.com</section>
         <section id="nav-links">
             <ul>
-                <a href="#"><li>one</li></a>
-                <a href="#"><li>two</li></a>
-                <a href="#"><li>three</li></a>
+                <a href="#"><li><i class="fa fa-commenting"></i></li></a>
+                <a href="#"><li><i class="fa fa-eur"></i></li></a>
+                <a href="#"><li><i class="fa fa-globe"></i></li></a>
+                <a href="#"><li><i class="fa fa-heart"></i> My Lists</li></a>
             </ul>
         </section>
     </nav>
+    <nav id="secondary">
+          
+              <ul>
+                <a href="#"><li>one</li></a>
+                <a href="#"><li>two</li></a>
+                <a href="#"><li>three</li></a>
+                <a href="#"><li>four</li></a>
+                <a href="#"><li>five</li></a>
+                <a href="#"><li>six</li></a>
+                <a href="#"><li>seven</li></a>
+                <a href="#"><li>eight</li></a>
+                <span class="underline"></span>
+            </ul> 
+                  
+    </nav>
+    
+    <section id="search-module-container">
+        something
+    
+    </section>
 </body>
 </html>
