@@ -1,0 +1,50 @@
+     *{padding: 0; margin: 0; font-family: Arial, sans-serif;}
+        *, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+        .underline {display: block; height: 1px; background-color: #E9E9E9; width:100%; margin-top: 15px;}
+        body {font-size: 15px;}
+      
+        
+        /* Top Nav styles */
+        nav#top {float:left; display: block; background: #3299BB; height: 50px; width: 100%; color:white;}
+        #logo {position: absolute; left: 30px; top:15px; letter-spacing: 1px; }
+        #nav-links {float:left;}
+        #nav-links a {color:white; text-decoration: none; cursor: pointer;}
+        #nav-links ul {position: absolute; right:0px; list-style: none; letter-spacing: 1px;}
+        #nav-links ul li {float:left; height: 50px; padding: 15px 30px 0 30px; border-right: 1px solid #E9E9E9; display: block;}
+        #nav-links ul li:hover {background-color:#BCBCBC;}
+        /* End top nav styles       */
+        
+/* Secondary Nav styles       */
+        nav#secondary {display:block; float:left; width: 100%; margin-top:15px; height: 50px;}
+        nav#secondary ul {position: absolute; left:30px; width: 90%; letter-spacing: 1px;}
+        nav#secondary ul li {display: inline; margin-right: 15px;}
+        nav#secondary a {color:#BCBCBC; text-decoration: none; font-weight: 100; letter-spacing: .5px;}
+        nav#secondary a:hover {color:#FF9900; text-decoration: none;}
+/*        end secondary styles*/
+        
+/*        start module styles*/
+        section#search-module-container {float: left; display: block; width:50%;  box-sizing: content-box; }
+        #search-input { box-sizing: border-box; width: inherit; background-color: #FF9900; position: absolute; left:30px; color: #424242; padding:15px;}
+        
+         #search-input h1 {font-kerning: normal; font-weight: 100; letter-spacing: 1px; margin: 15px 0;}
+        .label-spacing { display: block; margin-bottom: 5px;}
+        
+        #hotels {width:100%; display: block; height: 35px;font-size: 15px; border-radius: 3px; box-shadow: none; border:0; padding-left: 5px;}
+        .form-row, .form-half-row {float: left; width:100%; margin-bottom: 15px;}
+        .form-half-row {width:50%;}
+        #travel-purpose {padding:10px; background-color: antiquewhite; border-radius: 3px;}
+        .submit-button {width: 138px; color: white; height: 50px; font-size: 20px; border: 0; background-color: #3299BB; border-radius: 3px; float:right;}
+
+/*start social proof section*/
+
+#social-proof {float:right;  width: 45%; box-sizing: border-box; padding-right:30px;}
+#social-proof i {display:block; font-size:30px; float:left;}
+#social-proof span {float:right; padding-bottom: 5px; height:50px;}
+.social-proof-row {width:100%; margin-bottom: 10px;}
+.social-proof-row::after {
+     content:' ';
+    display:block;
+    border:1px solid #d0d0d0;
+    clear:both;
+
+}
