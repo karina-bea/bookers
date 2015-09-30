@@ -28,14 +28,16 @@
         
 /*        start module styles*/
         section#search-module-container {float: left; display: block; width:50%;  box-sizing: content-box; }
-        #search-input { box-sizing: border-box; height: 500px; width: inherit; background-color: #FF9900; position: absolute; left:30px; color: #424242; padding:15px;}
+        #search-input { box-sizing: border-box; width: inherit; background-color: #FF9900; position: absolute; left:30px; color: #424242; padding:15px;}
         
          #search-input h1 {font-kerning: normal; font-weight: 100; letter-spacing: 1px; margin: 15px 0;}
-        .label-spacing {margin-bottom: 5px;}
+        .label-spacing { display: block; margin-bottom: 5px;}
         
-        #hotels {width:100%; display: block; height: 30px;font-size: 15px; border-radius: 3px; box-shadow: none; border:0; padding-left: 5px;}
+        #hotels {width:100%; display: block; height: 35px;font-size: 15px; border-radius: 3px; box-shadow: none; border:0; padding-left: 5px;}
         .form-row, .form-half-row {float: left; width:100%; margin-bottom: 15px;}
         .form-half-row {width:50%;}
+        #travel-purpose {padding:10px; background-color: antiquewhite; border-radius: 3px;}
+        .submit-button {width: 138px; color: white; height: 50px; font-size: 20px; border: 0; background-color: #3299BB; border-radius: 3px; float:right;}
         
     </style>
 </head>
@@ -72,12 +74,12 @@
             <h1> <i class="fa fa-search"></i> Find the best hotels.</h1>
             <form>
                 <div class="form-row">
-                    <label for="hotels">Destination/Hotel Name</label>
+                    <label for="hotels" class="label-spacing">Destination/Hotel Name</label>
                     <input type="text" id="hotels" name="hotels" tabindex="1" placeholder="type city, region, district, or specific hotel" autofocus />
                 </div>
 <!--                Start dropdown section for dates-->
                 <div class="form-half-row">
-                    <label for="checkin" class="label-spacing">Check In Date</label><br/>
+                    <label for="checkin" class="label-spacing">Check In Date</label>
                     <select name="checkin">
                         <option value="volvo">Day</option>
                         <option value="saab">1</option>
@@ -92,7 +94,7 @@
                     </select>
                 </div>
                 <div class="form-half-row">
-                    <label for="checkout" class="label-spacing">Check Out Date</label><br/>
+                    <label for="checkout" class="label-spacing">Check Out Date</label>
                     <select name="checkout">
                         <option value="volvo">Day</option>
                         <option value="saab">1</option>
@@ -113,9 +115,23 @@
                 I don't have specific dates yet.
                      </label> 
                 </div>
+                
+                <div class="form-row" id="travel-purpose">
+                    <label>Traveling for:</label>
+                    <input type="radio" name="work" value="work"> Work
+                    <input type="radio" name="leisure" value="leisure"> Leisure
+                </div>
+                
+                <div class="form-row">
+                <input type="button" name="Submit" value="Submit" class="submit-button">
+                </div>
 
             </form>
         </section>
+    
+    </section>
+    
+    <section>
     
     </section>
 </body>
