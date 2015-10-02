@@ -2,6 +2,8 @@
         *, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
         .underline {display: block; height: 1px; background-color: #E9E9E9; width:100%; margin-top: 15px;}
         body {font-size: 15px;}
+        .clear {clear:both;}
+        .big-type {font-size:1.5em;}
       
         
         /* Top Nav styles */
@@ -23,8 +25,8 @@
 /*        end secondary styles*/
         
 /*        start module styles*/
-        section#search-module-container {float: left; display: block; width:50%;  box-sizing: content-box; }
-        #search-input { box-sizing: border-box; width: inherit; background-color: #FF9900; position: absolute; left:30px; color: #424242; padding:15px;}
+        section#search-module-container {float: left; display: block; width:50%;  box-sizing: content-box; padding-left: 30px;}
+        #search-input { box-sizing: border-box; width: 100%; background-color: #FF9900; position: relative; overflow: auto; color: #424242; padding:15px;}
         
          #search-input h1 {font-kerning: normal; font-weight: 100; letter-spacing: 1px; margin: 15px 0;}
         .label-spacing { display: block; margin-bottom: 5px;}
@@ -37,7 +39,7 @@
 
 /*start social proof section*/
 
-#social-proof {float:right;  width: 45%; box-sizing: border-box; padding-right:30px;}
+#social-proof {float:left;  width: 45%; box-sizing: border-box; padding-right:30px; clear:left; margin-top:30px; margin-left: 30px;}
 #social-proof i {display:block; font-size:30px; float:left;}
 #social-proof span {float:right; padding-bottom: 5px; height:50px;}
 .social-proof-row {width:100%; margin-bottom: 10px;}
@@ -48,3 +50,10 @@
     clear:both;
 
 }
+
+/*half callout section*/
+
+.half-row { width:50%; display: block; float:left; clear:left; overflow: auto;  padding-left: 30px;}
+.float-left {float:left;} .float-right{float:right;}
+.callout-icon {font-size: 1.5em; padding: 0 15px 15px 0;}
+.booking-green {color:green;}
