@@ -12,6 +12,7 @@
 
         .big-type {font-size:1.5em;}
         .sl-center {line-height: 30px;}
+        .text-center {text-align: center;}
 
 
         *, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
@@ -58,9 +59,9 @@
 
 /*start social proof section*/
 
-#social-proof {float:left;  width: 100%; box-sizing: border-box; padding-right:30px; clear:left; margin-top:30px; margin-left: 30px;}
-#social-proof i {display:block; font-size:30px; float:left;}
-#social-proof span {float:right; padding-bottom: 5px; height:50px;}
+#social-proof {float:left;  width: 100%; box-sizing: border-box; padding-right:30px; clear:left; margin-top:30px;}
+#social-proof i {display:block; font-size:24px; float:left; min-width: 48px; text-align: center;}
+#social-proof span {float:right; padding-bottom: 6px; width:80%;}
 .social-proof-row {width:100%; margin-bottom: 12px;}
 .social-proof-row::after {
      content:' ';
@@ -69,6 +70,9 @@
     clear:both;
 
 }
+
+.social-proof-row i {background-color: #7bbd65; padding:12px; border-radius: 60px;}
+
 
 /*half callout section*/
 
